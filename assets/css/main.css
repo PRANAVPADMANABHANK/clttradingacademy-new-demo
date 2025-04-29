@@ -2229,7 +2229,7 @@ img {
   background-color: var(--tc-system-black);
 }
 .navbar-transparent.navbar-stick {
-  background: rgba(41, 41, 41, 0.6) !important;
+  background: #000 !important;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   z-index: 1009 !important;
@@ -14744,3 +14744,20 @@ textarea.message:focus {
       margin-top: 23rem !important;
     }
   } */
+
+  .bg-testimonials{
+    color: #000;
+  }
+
+.border-courses{
+  border: 1px solid;
+}
+.h1-courses{
+  font-size: 40px;
+  text-align: center;
+}
+
+.course-btn:hover{
+  background: #000000;
+  border-color: #dee2e6;
+}
