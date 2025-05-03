@@ -32,7 +32,7 @@ body.landing-page h6 {
   line-height: var(--tc-heading-line-height);
 }
 body.landing-page p {
-  color: #5f6980;
+  color: #000;
 }
 body.landing-page .text-secondary {
   color: #ffffffcf !important;
@@ -597,7 +597,7 @@ body.landing-page .card-5 .content .tag {
   background: linear-gradient(90deg, #177b3e 0%, #14b253 100%);
 }
 body.landing-page .landing-section-7 {
-  background: #e5eaf2;
+  background: #000;
 }
 body.landing-page .landing-section-2 .bg-popular {
   background: #ffecd6;
@@ -621,7 +621,7 @@ body.landing-page .card-testimonial {
   box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.03);
 }
 body.landing-page .bg-blur {
-  background: linear-gradient(180deg, rgba(229, 234, 242, 0) 0%, rgba(229, 234, 242, 0.7) 56%, rgba(229, 234, 242, 0.94) 80%, #e5eaf2 100%);
+  background: linear-gradient(180deg, rgba(229, 234, 242, 0) 0%, #00000096 56%, #000000f5 80%, #000 100%);
   height: 360px;
   z-index: 2;
 }
