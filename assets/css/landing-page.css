@@ -27,15 +27,15 @@ body.landing-page h3,
 body.landing-page h4,
 body.landing-page h5,
 body.landing-page h6 {
-  color: #282828;
+  color: #ffffff;
   font-weight: var(--tc-fw-semi-bold);
   line-height: var(--tc-heading-line-height);
 }
 body.landing-page p {
-  color: #5f6980;
+  color: #000;
 }
 body.landing-page .text-secondary {
-  color: var(--tc-body-text-secondary) !important;
+  color: #ffffffcf !important;
 }
 body.landing-page .text-secondary-1 {
   color: #bcbcbc;
@@ -232,7 +232,7 @@ body.landing-page .btn-linearr::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/landing-page/bg-btn.png);
+  /* background-image: url(../imgs/landing-page/bg-btn.png); */
   background-size: cover;
   background-position: center;
   mix-blend-mode: luminosity;
@@ -245,7 +245,7 @@ body.landing-page .btn-linearr::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(267deg, #c6ffdd 5.06%, #fbd786 76.31%, #c7973e 141.86%);
+  background: linear-gradient(26deg, #000 25.06%, #ea0700 76.31%, #000 141.86%);
   z-index: -2;
 }
 body.landing-page .framer-video {
@@ -597,7 +597,7 @@ body.landing-page .card-5 .content .tag {
   background: linear-gradient(90deg, #177b3e 0%, #14b253 100%);
 }
 body.landing-page .landing-section-7 {
-  background: #e5eaf2;
+  background: #000;
 }
 body.landing-page .landing-section-2 .bg-popular {
   background: #ffecd6;
@@ -621,7 +621,7 @@ body.landing-page .card-testimonial {
   box-shadow: 0px 16px 40px 0px rgba(0, 0, 0, 0.03);
 }
 body.landing-page .bg-blur {
-  background: linear-gradient(180deg, rgba(229, 234, 242, 0) 0%, rgba(229, 234, 242, 0.7) 56%, rgba(229, 234, 242, 0.94) 80%, #e5eaf2 100%);
+  background: linear-gradient(180deg, rgba(229, 234, 242, 0) 0%, #00000096 56%, #000000f5 80%, #000 100%);
   height: 360px;
   z-index: 2;
 }
