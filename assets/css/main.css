@@ -14901,3 +14901,22 @@ textarea.message:focus {
 .card-1:hover .icon-shape {
   background-color: #f0f0f0 !important;
 }
+
+
+.btn-gradient {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff2c2c, #000000);
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 44, 44, 0.3);
+}
