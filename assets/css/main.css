@@ -70,7 +70,7 @@ Table of contents
   --tc-body-text-secondary: #999999;
   --tc-system-white: #ffffff;
   --tc-system-stroke: #e2e2e2;
-  --tc-system-black: #292929;
+  --tc-system-black: #ffffffcf;
   --tc-system-black-2: #2c2e3c;
   --tc-system-indigo: #794aff;
   --tc-system-indigo-light: #beaaee;
@@ -4047,7 +4047,7 @@ body.news-magazine .text-secondary {
 
 .btn-text {
   font-family: var(--tc-btn-font-family);
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -14746,7 +14746,7 @@ textarea.message:focus {
   } */
 
   .bg-testimonials{
-    color: #000;
+    color: #e60700;
   }
 
 .border-courses{

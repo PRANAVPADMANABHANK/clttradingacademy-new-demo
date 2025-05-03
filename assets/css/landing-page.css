@@ -27,7 +27,7 @@ body.landing-page h3,
 body.landing-page h4,
 body.landing-page h5,
 body.landing-page h6 {
-  color: #282828;
+  color: #ffffff;
   font-weight: var(--tc-fw-semi-bold);
   line-height: var(--tc-heading-line-height);
 }
@@ -35,7 +35,7 @@ body.landing-page p {
   color: #5f6980;
 }
 body.landing-page .text-secondary {
-  color: var(--tc-body-text-secondary) !important;
+  color: #ffffffcf !important;
 }
 body.landing-page .text-secondary-1 {
   color: #bcbcbc;
@@ -232,7 +232,7 @@ body.landing-page .btn-linearr::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/landing-page/bg-btn.png);
+  /* background-image: url(../imgs/landing-page/bg-btn.png); */
   background-size: cover;
   background-position: center;
   mix-blend-mode: luminosity;
@@ -245,7 +245,7 @@ body.landing-page .btn-linearr::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(267deg, #c6ffdd 5.06%, #fbd786 76.31%, #c7973e 141.86%);
+  background: linear-gradient(26deg, #000 25.06%, #ea0700 76.31%, #000 141.86%);
   z-index: -2;
 }
 body.landing-page .framer-video {
