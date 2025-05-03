@@ -5430,7 +5430,7 @@ strong {
 }
 
 .pt-200 {
-  padding-top: 678px;
+  padding-top: 540px;
 }
 
 .pb-200 {
@@ -14861,3 +14861,43 @@ textarea.message:focus {
 .rotating-headings h1:nth-child(7) { animation-delay: 12s; }
 .rotating-headings h1:nth-child(8) { animation-delay: 14s; }
 .rotating-headings h1:nth-child(9) { animation-delay: 16s; }
+
+
+
+
+.card-1 {
+  background-color: #1a1a1a; /* fallback dark background */
+  color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  position: relative;
+}
+
+/* Ensure nested elements also transition smoothly */
+.card-1 h4,
+.card-1 p,
+.card-1 .text-secondary,
+.card-1 .icon-shape,
+.card-1 .performance h3,
+.card-1 .performance h6 {
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+/* Hover styles */
+.card-1:hover {
+  background-color: #9b110c !important;
+  color: #000;
+}
+
+/* Update nested elements on hover for contrast */
+.card-1:hover h4,
+.card-1:hover p,
+.card-1:hover .text-secondary,
+.card-1:hover .performance h3,
+.card-1:hover .performance h6 {
+  color: #000 !important;
+}
+
+/* Lighten icon background on hover */
+.card-1:hover .icon-shape {
+  background-color: #f0f0f0 !important;
+}
