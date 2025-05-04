@@ -70,7 +70,7 @@ Table of contents
   --tc-body-text-secondary: #999999;
   --tc-system-white: #ffffff;
   --tc-system-stroke: #e2e2e2;
-  --tc-system-black: #292929;
+  --tc-system-black: #000;
   --tc-system-black-2: #2c2e3c;
   --tc-system-indigo: #794aff;
   --tc-system-indigo-light: #beaaee;
@@ -4047,7 +4047,7 @@ body.news-magazine .text-secondary {
 
 .btn-text {
   font-family: var(--tc-btn-font-family);
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -5430,7 +5430,7 @@ strong {
 }
 
 .pt-200 {
-  padding-top: 678px;
+  padding-top: 540px;
 }
 
 .pb-200 {
@@ -14746,7 +14746,7 @@ textarea.message:focus {
   } */
 
   .bg-testimonials{
-    color: #000;
+    color: #e60700;
   }
 
 .border-courses{
@@ -14820,4 +14820,103 @@ textarea.message:focus {
 
 .location:hover::after {
   opacity: 1;
+}
+
+
+.rotating-headings {
+    position: relative;
+    width: 100%;
+    height: 11rem; /* Increased height to accommodate the tallest heading */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotating-headings h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Added transform transition */
+    z-index: 1;
+}
+.rotating-headings h1.active {
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(0); /* Ensure active heading is at its original position */
+}
+.rotating-headings h1.previous {
+    opacity: 0;
+    transform: translateY(-10px); /* Move previous heading slightly up */
+    z-index: 1;
+}
+.rotating-headings h1:nth-child(1) { animation-delay: 0s; }
+.rotating-headings h1:nth-child(2) { animation-delay: 2s; }
+.rotating-headings h1:nth-child(3) { animation-delay: 4s; }
+.rotating-headings h1:nth-child(4) { animation-delay: 6s; }
+.rotating-headings h1:nth-child(5) { animation-delay: 8s; }
+.rotating-headings h1:nth-child(6) { animation-delay: 10s; }
+.rotating-headings h1:nth-child(7) { animation-delay: 12s; }
+.rotating-headings h1:nth-child(8) { animation-delay: 14s; }
+.rotating-headings h1:nth-child(9) { animation-delay: 16s; }
+
+
+
+
+.card-1 {
+  background-color: #1a1a1a; /* fallback dark background */
+  color: #fff;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  position: relative;
+}
+
+/* Ensure nested elements also transition smoothly */
+.card-1 h4,
+.card-1 p,
+.card-1 .text-secondary,
+.card-1 .icon-shape,
+.card-1 .performance h3,
+.card-1 .performance h6 {
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+/* Hover styles */
+.card-1:hover {
+  background-color: #9b110c !important;
+  color: #000;
+}
+
+/* Update nested elements on hover for contrast */
+.card-1:hover h4,
+.card-1:hover p,
+.card-1:hover .text-secondary,
+.card-1:hover .performance h3,
+.card-1:hover .performance h6 {
+  color: #000 !important;
+}
+
+/* Lighten icon background on hover */
+.card-1:hover .icon-shape {
+  background-color: #f0f0f0 !important;
+}
+
+
+.btn-gradient {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff2c2c, #000000);
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 44, 44, 0.3);
 }
